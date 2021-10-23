@@ -65,7 +65,7 @@
           </form>
         </div>
         <div class="right-toolbar">
-          <i class="fas fa-bell" (click)="showActivityModal()" ></i>
+          <i class="fas fa-bell" (click)="showActivityModal()" [ngClass]="{'purple-bell': activityModal, 'ash-bell' : !activityModal}"></i>
         <div class="profile-div"><img alt="profile-imgage" src="assets/prof.jfif"/>
         <span>Abigail <i class="fas fa-chevron-down"></i> </span>
         </div>
@@ -94,19 +94,6 @@
 
         </div>
         </div>
-
-<!--        <div class="activity-div">-->
-<!--          <img alt="profile-activity" src="assets/prof.jfif"/>-->
-<!--          <div class="activity">-->
-<!--            <p class="activity-text">Michael commented-->
-<!--              on your photo!</p>-->
-<!--            <p class="activity-time">About 56 mins ago</p>-->
-<!--          </div>-->
-<!--          <i class="fas fa-comment-alt"></i>-->
-<!--          <div>-->
-
-<!--          </div>-->
-<!--        </div>-->
       </div>
     </mat-toolbar>
     <!-- Add Content Here -->

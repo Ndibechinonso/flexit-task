@@ -50,9 +50,6 @@ body {
       @include row-flex;
       gap: 10px;
       margin-left: 20px;
-      .fa-bell{
-        color: #a3a2aa;
-      }
       .fa-bell:hover{
         cursor: pointer;
       }
@@ -62,6 +59,9 @@ body {
         span {
           font-size: 12px;
           color: #393293;
+          &:hover{
+            cursor: pointer;
+          }
           i{
             font-size: 12px;
           }
@@ -125,9 +125,8 @@ body {
     .activity-text {
       font-size: 14px;
       color: #393293;
-      word-break: break-word;
+      word-break: break-all;
       word-wrap: break-word;
-      max-width: 200px;
     }
     .fa-heart{
       color: red;
@@ -241,4 +240,11 @@ body {
 
 .bottom {
   transform: translateY(12.5px) rotateX(-90deg);
+}
+
+.ash-bell{
+  color: #a3a2aa;
+}
+.purple-bell{
+  color: #392f97;
 }

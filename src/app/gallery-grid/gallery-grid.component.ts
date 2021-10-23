@@ -30,8 +30,7 @@ export class GalleryGridComponent implements OnInit {
     this.gridImages = data.results;
     this.gridImages = this.gridImages.map(userDetail => Object.assign({}, userDetail,
       {userName: userDetail.user.first_name || userDetail.user.last_name },
-      {userLocation: userDetail.user.location || '' }))
-    console.log(this.gridImages)
+      {userLocation: userDetail.user.location || '' }));
 
     })
   }
