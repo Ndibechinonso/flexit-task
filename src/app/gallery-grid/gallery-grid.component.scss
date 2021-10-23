@@ -30,13 +30,12 @@
     .image-select{
       @include flex(column, center);
       position: absolute;
-      height: 30%;
+      min-height: 30%;
       width: 100%;
       background: #ffffff;
       bottom: 0;
       gap: 5px;
-      padding-left: 10%;
-      padding-right: 10%;
+      padding: 10px 10%;
       box-sizing: border-box;
       visibility: hidden;
       .username{
