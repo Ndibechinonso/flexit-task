@@ -10,7 +10,7 @@
 <div class="grid-container" *ngIf="gridImages && !loading">
   <ng-container *ngFor="let image of gridImages">
     <div class="user-container">
-    <div class="image-div" [style.background]="'url('+image.urls.thumb+')'">
+    <div class="image-div" [style.background]="'url('+image.urls.regular+')'">
 <!--   <img [src]="image.urls.thumb" alt="hi"/>-->
       <div class="user-details">
       <p>{{image.userName}}</p>

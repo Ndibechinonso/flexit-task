@@ -40,7 +40,6 @@ export class SideNavComponent implements OnInit {
   }
 
   fetchCategory(value: string){
-    console.log(value)
     this.dataService.sendpayLoadType(value);
   }
 }
